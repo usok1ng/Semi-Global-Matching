@@ -7,6 +7,7 @@ from Birchfield_Tomasi_dissimilarity import Birchfield_Tomasi_dissimilarity
 from aggregate_cost_volume import aggregate_cost_volume
 from warp import warp_image
 
+
 # Modify any parameters or any function itself if necessary.
 # Add comments to parts related to scoring criteria to get graded.
 
@@ -24,14 +25,6 @@ def semi_global_matching(left_image, right_image, d):
     aggregated_disparity = aggregated_cost_volume.argmin(axis=2)
 
     # TODO: save Semi Global Matching disparity
-
-
-def mutual_information(hist_2d):
-    # TODO: Implement mutual information
-
-    raise NotImplementedError("mutual_information function has not been implemented yet")
-
-    return mi
 
 
 if __name__ == "__main__":

@@ -14,4 +14,3 @@ def Birchfield_Tomasi_dissimilarity(left_image, right_image, d):
     right_disparity = right_cost_volume.argmin(axis=2)
 
     return left_cost_volume, right_cost_volume, left_disparity, right_disparity
-
