@@ -28,9 +28,12 @@ def semi_global_matching(left_image, right_image, d):
 
 
 if __name__ == "__main__":
-    img_list = list()
-    ground_truth = None
+    img_list = os.listdir(input)
+    ground_truth = os.listdir(target)
     # TODO: Load required images
+
+    for img in img_list:
+        img = cv2.imread(img, cv2.IMREAD_GRAYSCALE)
 
     d = 24
 
